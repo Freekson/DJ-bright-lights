@@ -36,4 +36,29 @@ header{
             }
         }
     }
+    .header-text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 18%;
+        .text-block{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            .bold-text{
+                font-size: 48px;
+                font-weight: bold;
+                color: white;
+            }
+            .outborder-text{
+                font-size: 100px;
+                font-weight: bold;
+                color: rgba(0,0,0,0);
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
+            }
+        }
+    }
 }
