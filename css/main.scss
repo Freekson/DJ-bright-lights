@@ -1,3 +1,5 @@
+$first-background-color: #7A66CC;
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@
 header{
     height: 1000px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1C1B21 92.19%), url(/css/source/background.png);
+    background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
     overflow: hidden;
     position: relative;
     nav{
@@ -41,11 +45,12 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 18%;
+        margin-top: 20%;
         .text-block{
             display: flex;
             flex-direction: column;
             align-items: left;
+            text-shadow: 400px -150px  500px white;
             .bold-text{
                 font-size: 48px;
                 font-weight: bold;
@@ -58,6 +63,50 @@ header{
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: white;
+            }
+        }
+        .music-player{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-left: 58%;
+            margin-top: 5%;
+            .triangle{
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 20px solid white;
+                border-bottom: 10px solid transparent;
+                margin-right: 3%;
+            }
+            .line-block{
+                width: 90%;
+                display: flex;
+                align-items: center;
+                div{
+                    height: 2px;
+                }
+                .hr1{
+                    width: 15%;
+                    background: $first-background-color;
+                }
+                .hr2{
+                
+                    width: 3px;
+                    height: 20px;
+                    background:$first-background-color ;
+                }
+                .hr3{
+                    width: 84.5%;
+                    background-color: white;
+                }
+            }
+            .time{
+                width: 50%;
+                margin-left: 3%;
+                font-size: 18px;
+                color: white;
             }
         }
     }
