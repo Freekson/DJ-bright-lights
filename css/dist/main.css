@@ -8,7 +8,9 @@
 header {
   height: 1000px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1C1B21 92.19%), url(/css/source/background.png);
+  background-repeat: no-repeat;
   background-size: 100%;
+  background-size: cover;
   overflow: hidden;
   position: relative;
 }
@@ -43,12 +45,13 @@ header .header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 18%;
+  margin-top: 20%;
 }
 header .header-text .text-block {
   display: flex;
   flex-direction: column;
   align-items: left;
+  text-shadow: 400px -150px 500px white;
 }
 header .header-text .text-block .bold-text {
   font-size: 48px;
@@ -62,4 +65,47 @@ header .header-text .text-block .outborder-text {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+header .header-text .music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 58%;
+  margin-top: 5%;
+}
+header .header-text .music-player .triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 10px solid transparent;
+  margin-right: 3%;
+}
+header .header-text .music-player .line-block {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+header .header-text .music-player .line-block div {
+  height: 2px;
+}
+header .header-text .music-player .line-block .hr1 {
+  width: 15%;
+  background: #7A66CC;
+}
+header .header-text .music-player .line-block .hr2 {
+  width: 3px;
+  height: 20px;
+  background: #7A66CC;
+}
+header .header-text .music-player .line-block .hr3 {
+  width: 84.5%;
+  background-color: white;
+}
+header .header-text .music-player .time {
+  width: 50%;
+  margin-left: 3%;
+  font-size: 18px;
+  color: white;
 }
