@@ -12,12 +12,15 @@ header{
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
-    overflow: hidden;
     position: relative;
+    margin-top: -1%;
+    overflow: hidden;
+
+    left: 0;
     nav{
         display: flex;
         justify-content: center;
-        margin-top: 1%;
+        margin-top: 2%;
         ul{
             width: 50%;
             display: flex;
@@ -110,27 +113,46 @@ header{
             }
         }
     }
+}
+.image-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-top: -10%;
+    background: -webkit-linear-gradient(180deg, rgb(28, 27, 33) 49%, rgb(0, 0, 0) 82%);
+    background: -moz-linear-gradient(180deg, rgb(28, 27, 33) 49%, rgb(0, 0, 0) 82%);
+    background: linear-gradient(180deg, rgb(28, 27, 33) 49%, rgb(0, 0, 0) 82%);
     .image-block{
-        position: relative;
-        width: 30%;
+        margin-right: 5%;
         .image{
+            position: relative;
             img{
+                width: 350px;
+                height: 350px;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .text-block{
+                position: absolute;
+                bottom: 5px;
                 width: 100%;
+                z-index: 2;
+                background-color: $first-background-color;
+                opacity: .8;
+                color: white;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                p{
+                    padding: 2% 10%;
+                    font-style: 16px;
+                }
             }
         }
-        .text-block{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            z-index: 2;
-            background-color: $first-background-color;
-            opacity: .8;
-            color: white;
-            border-radius: 15% 85% 15% 85% / 100% 0% 100% 0%;
-            p{
-                padding: 2% 10%;
-                font-style: 16px;
-            }
-        }
+    }
+    .image-block:last-child{
+        margin-right: 0;
     }
 }
