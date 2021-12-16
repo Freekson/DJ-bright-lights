@@ -11,13 +11,15 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
-  overflow: hidden;
   position: relative;
+  margin-top: -1%;
+  overflow: hidden;
+  left: 0;
 }
 header nav {
   display: flex;
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 header nav ul {
   width: 50%;
@@ -109,24 +111,46 @@ header .header-text .music-player .time {
   font-size: 18px;
   color: white;
 }
-header .image-block {
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-top: -10%;
+  background: -webkit-linear-gradient(180deg, #1c1b21 49%, black 82%);
+  background: -moz-linear-gradient(180deg, #1c1b21 49%, black 82%);
+  background: linear-gradient(180deg, #1c1b21 49%, black 82%);
+}
+.image-section .image-block {
+  margin-right: 5%;
+}
+.image-section .image-block .image {
   position: relative;
-  width: 30%;
 }
-header .image-block .image img {
-  width: 100%;
+.image-section .image-block .image img {
+  width: 350px;
+  height: 350px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-header .image-block .text-block {
+.image-section .image-block .image .text-block {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   z-index: 2;
   background-color: #7A66CC;
   opacity: 0.8;
   color: white;
-  border-radius: 15% 85% 15% 85%/100% 0% 100% 0%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
-header .image-block .text-block p {
+.image-section .image-block .image .text-block p {
   padding: 2% 10%;
   font-style: 16px;
+}
+.image-section .image-block:last-child {
+  margin-right: 0;
 }
