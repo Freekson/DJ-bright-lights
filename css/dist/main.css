@@ -12,7 +12,6 @@ header {
   background-size: 100%;
   background-size: cover;
   position: relative;
-  margin-top: -1%;
   overflow: hidden;
   left: 0;
 }
@@ -63,7 +62,6 @@ header .header-text .text-block .bold-text {
 header .header-text .text-block .outborder-text {
   font-size: 100px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
@@ -113,20 +111,20 @@ header .header-text .music-player .time {
 }
 
 main {
-  background-color: black;
+  background-color: #1C1B21;
 }
 main .images-section {
   display: flex;
   justify-content: center;
   margin-top: 8%;
   margin-top: -10%;
-  background: -webkit-linear-gradient(180deg, #1c1b21 49%, black 82%);
-  background: -moz-linear-gradient(180deg, #1c1b21 49%, black 82%);
-  background: linear-gradient(180deg, #1c1b21 49%, black 82%);
+  background: -webkit-linear-gradient(180deg, #1c1b21 49%, #1C1B21 82%);
+  background: -moz-linear-gradient(180deg, #1c1b21 49%, #1C1B21 82%);
+  background: linear-gradient(180deg, #1c1b21 49%, #1C1B21 82%);
   padding: 5%;
 }
 main .images-section .image-block {
-  width: 20%;
+  width: 22%;
   margin-right: 5%;
 }
 main .images-section .image-block .image {
@@ -161,12 +159,13 @@ main .images-section .image-block:last-child {
   margin-right: 0;
 }
 main .article-section {
-  background-color: #000000;
-  margin-top: 10%;
+  padding: 5% 0%;
+  display: flex;
 }
 main .article-section .text-block {
   width: 40%;
   margin-left: 10%;
+  flex-basis: 45%;
 }
 main .article-section .text-block .header-text {
   display: flex;
@@ -213,4 +212,33 @@ main .article-section .text-block .table .column .column-item p {
 }
 main .article-section .text-block .table .column .column-item:last-child {
   justify-content: right;
+}
+main .article-section .image-block {
+  flex-basis: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main .article-section .image-block img {
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  top: 15%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.2s;
+  z-index: 1;
+}
+main .article-section .image-block img:last-child {
+  top: 25%;
+  z-index: 0;
+  right: 15%;
+  opacity: 0.3;
+}
+main .article-section .image-block:hover img {
+  opacity: 0.3;
+}
+main .article-section .image-block:hover img:last-child {
+  opacity: 1;
+  z-index: 3;
 }
