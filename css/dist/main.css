@@ -158,47 +158,48 @@ main .images-section .image-block .image .text-block p {
 main .images-section .image-block:last-child {
   margin-right: 0;
 }
-main .article-section {
+main .bright-lights-section {
   padding: 5% 0%;
   display: flex;
+  margin-bottom: 10%;
 }
-main .article-section .text-block {
+main .bright-lights-section .text-block {
   width: 40%;
   margin-left: 10%;
   flex-basis: 45%;
 }
-main .article-section .text-block .header-text {
+main .bright-lights-section .text-block .header-text {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
 }
-main .article-section .text-block .header-text img {
+main .bright-lights-section .text-block .header-text img {
   width: 10%;
   height: 50px;
   margin-right: 5%;
 }
-main .article-section .text-block .header-text h4 {
+main .bright-lights-section .text-block .header-text h4 {
   color: white;
   font-size: 48px;
 }
-main .article-section .text-block p {
+main .bright-lights-section .text-block p {
   color: gray;
   padding-bottom: 2%;
 }
-main .article-section .text-block .table {
+main .bright-lights-section .text-block .table {
   margin-top: 5%;
 }
-main .article-section .text-block .table .column {
+main .bright-lights-section .text-block .table .column {
   display: flex;
   justify-content: center;
 }
-main .article-section .text-block .table .column .column-item {
+main .bright-lights-section .text-block .table .column .column-item {
   display: flex;
   justify-content: left;
   width: 50%;
   margin-bottom: 5%;
 }
-main .article-section .text-block .table .column .column-item .box {
+main .bright-lights-section .text-block .table .column .column-item .box {
   width: 30px;
   height: 30px;
   border-top-left-radius: 10px;
@@ -206,39 +207,85 @@ main .article-section .text-block .table .column .column-item .box {
   background-color: #7A66CC;
   margin-right: 5%;
 }
-main .article-section .text-block .table .column .column-item p {
+main .bright-lights-section .text-block .table .column .column-item p {
   color: white;
   font-weight: bold;
 }
-main .article-section .text-block .table .column .column-item:last-child {
+main .bright-lights-section .text-block .table .column .column-item:last-child {
   justify-content: right;
 }
-main .article-section .image-block {
+main .bright-lights-section .image-block {
   flex-basis: 45%;
   position: relative;
   display: flex;
   justify-content: center;
 }
-main .article-section .image-block img {
+main .bright-lights-section .image-block img {
   position: absolute;
   width: 350px;
   height: 400px;
   top: 15%;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  transition: 0.2s;
+  transition: 0.4s;
   z-index: 1;
 }
-main .article-section .image-block img:last-child {
+main .bright-lights-section .image-block img:last-child {
   top: 25%;
   z-index: 0;
   right: 15%;
   opacity: 0.3;
 }
-main .article-section .image-block:hover img {
+main .bright-lights-section .image-block:hover img {
   opacity: 0.3;
 }
-main .article-section .image-block:hover img:last-child {
+main .bright-lights-section .image-block:hover img:last-child {
   opacity: 1;
   z-index: 3;
+}
+main .article-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 5%;
+  height: 70vh;
+  position: relative;
+}
+main .article-section .text-block {
+  position: absolute;
+  width: 80%;
+  border: 1px solid white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5%;
+}
+main .article-section .text-block .text {
+  width: 50%;
+}
+main .article-section .text-block .text .paragraf {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5%;
+}
+main .article-section .text-block .text hr {
+  background-color: gray;
+  border-color: gray;
+}
+main .article-section .text-block .text svg {
+  position: absolute;
+  top: 20%;
+}
+main .article-section .text-block .text .violet {
+  color: #7A66CC;
+  font-weight: bold;
+  margin-top: 5%;
+}
+main .article-section .image {
+  position: absolute;
+  top: -65px;
+  right: 200px;
+}
+main .article-section .image img {
+  width: 370px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
