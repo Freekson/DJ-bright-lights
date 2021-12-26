@@ -236,13 +236,6 @@ main .bright-lights-section .image-block img:last-child {
   right: 15%;
   opacity: 0.3;
 }
-main .bright-lights-section .image-block:hover img {
-  opacity: 0.3;
-}
-main .bright-lights-section .image-block:hover img:last-child {
-  opacity: 1;
-  z-index: 3;
-}
 main .article-section {
   display: flex;
   justify-content: center;
@@ -288,4 +281,136 @@ main .article-section .image img {
   width: 370px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+main .last-tracks-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .last-tracks-section .image-block {
+  margin-right: 5%;
+}
+main .last-tracks-section .image-block .first-layer {
+  width: 510px;
+  height: 510px;
+  background-color: rgba(122, 102, 204, 0.3);
+  border-radius: 250px;
+  position: relative;
+}
+main .last-tracks-section .image-block .first-layer .second-layer {
+  top: 15px;
+  right: 15px;
+  width: 480px;
+  height: 480px;
+  background-color: rgba(122, 102, 204, 0.6);
+  border-radius: 245px;
+  position: absolute;
+}
+main .last-tracks-section .image-block .first-layer .second-layer img {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 225px;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+}
+main .last-tracks-section .tracks-list .header-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+main .last-tracks-section .tracks-list .header-text img {
+  width: 10%;
+  height: 50px;
+  margin-right: 5%;
+}
+main .last-tracks-section .tracks-list .header-text h4 {
+  color: white;
+  font-size: 48px;
+}
+main .last-tracks-section .tracks-list .music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .last-tracks-section .tracks-list .music-player .triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 10px solid transparent;
+  margin-right: 3%;
+}
+main .last-tracks-section .tracks-list .music-player .line-block {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+main .last-tracks-section .tracks-list .music-player .line-block div {
+  height: 2px;
+}
+main .last-tracks-section .tracks-list .music-player .line-block .hr1 {
+  width: 15%;
+  background: #7A66CC;
+}
+main .last-tracks-section .tracks-list .music-player .line-block .hr2 {
+  width: 3px;
+  height: 20px;
+  background: #7A66CC;
+}
+main .last-tracks-section .tracks-list .music-player .line-block .hr3 {
+  width: 84.5%;
+  background-color: white;
+}
+main .last-tracks-section .tracks-list .music-player .time {
+  width: 50%;
+  margin-left: 3%;
+  font-size: 18px;
+  color: white;
+}
+main .last-tracks-section .tracks-list .tracks {
+  list-style: none;
+}
+main .last-tracks-section .tracks-list .tracks li {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+main .last-tracks-section .tracks-list .tracks li p {
+  color: gray;
+  margin-right: 20px;
+  font-size: 14px;
+}
+main .last-tracks-section .tracks-list .tracks li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+main .last-tracks-section .tracks-list .tracks .active-track a {
+  color: #7A66CC;
+}
+main .last-tracks-section .tracks-list .follow-me {
+  display: flex;
+  margin-top: 10%;
+}
+main .last-tracks-section .tracks-list .follow-me .header {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10%;
+}
+main .last-tracks-section .tracks-list .follow-me .follow-block {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+main .last-tracks-section .tracks-list .follow-me .follow-block img {
+  margin-right: 20px;
+}
+main .last-tracks-section .tracks-list .follow-me .follow-block p {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
