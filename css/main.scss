@@ -237,15 +237,6 @@ main{
                 opacity: 0.3;
             }
         }
-        .image-block:hover{
-            img{
-                opacity: 0.3;
-            }
-            img:last-child{
-                opacity: 1;
-                z-index: 3;
-            }
-        }
     } 
     .article-section{
         display: flex;
@@ -292,5 +283,142 @@ main{
                 border-bottom-right-radius: 20px;
             }
         }
-    }   
+    } 
+    .last-tracks-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-block{
+            margin-right: 5%;
+            .first-layer{
+                width: 510px;
+                height: 510px;
+                background-color: rgba(122, 102, 204, 0.3);
+                border-radius: 250px;
+                position: relative;
+                .second-layer{
+                    top: 15px;
+                    right: 15px;
+                    width: 480px;
+                    height: 480px;
+                    background-color: rgba(122, 102, 204, 0.6);
+                    border-radius: 245px;
+                    position: absolute;
+                    img{
+                        position: absolute;
+                        width: 440px;
+                        height: 440px;
+                        border-radius: 225px;
+                        top: 20px;
+                        right: 20px;
+                        opacity: 1;
+                    }
+                }   
+            }
+        }
+        .tracks-list{
+            .header-text{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10%;
+                img{
+                    width: 10%;
+                    height: 50px;
+                    margin-right: 5%;
+                }
+                h4{
+                    color: white;
+                    font-size: 48px;
+                }
+            }
+            .music-player{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .triangle{
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-left: 20px solid white;
+                    border-bottom: 10px solid transparent;
+                    margin-right: 3%;
+                }
+                .line-block{
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        height: 2px;
+                    }
+                    .hr1{
+                        width: 15%;
+                        background: $first-background-color;
+                    }
+                    .hr2{
+                    
+                        width: 3px;
+                        height: 20px;
+                        background:$first-background-color ;
+                    }
+                    .hr3{
+                        width: 84.5%;
+                        background-color: white;
+                    }
+                }
+                .time{
+                    width: 50%;
+                    margin-left: 3%;
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+            .tracks{
+                list-style: none;
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5%;
+                    p{
+                        color: gray;
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+                .active-track{
+                    a{
+                        color: $first-background-color;
+                    }
+                }
+            }
+            .follow-me{
+                display: flex;
+                margin-top: 10%;
+                .header{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-right: 10%;
+                }
+                .follow-block{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10%;
+                    img{
+                        margin-right: 20px;
+                    }
+                    p{
+                        color: white;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }  
 }
