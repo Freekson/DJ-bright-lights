@@ -414,3 +414,37 @@ main .last-tracks-section .tracks-list .follow-me .follow-block p {
   font-size: 14px;
   font-weight: bold;
 }
+main .image-section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+main .image-section .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+main .image-section .column img {
+  width: 225px;
+  height: 500px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main .image-section .column .row {
+  display: flex;
+}
+main .image-section .column .row img {
+  height: 235px;
+  width: 540px;
+  margin-right: 5%;
+}
+main .image-section .column .row:first-child img {
+  width: 255px;
+}
+main .image-section .column:last-child {
+  margin-right: 0;
+}
