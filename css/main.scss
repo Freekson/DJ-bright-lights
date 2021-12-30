@@ -433,18 +433,35 @@ main{
             flex-direction: column;
             justify-content: space-between;
             margin-right: 2%;
-            img{
-                width: 225px;
-                height: 500px;
-                border-top-left-radius: 20px;
-                border-bottom-right-radius: 20px;
+            .image{
+                position: relative;
+                cursor: pointer;
+                img{
+                    transition: .2s;
+                    width: 270px;
+                    height: 500px;
+                    border-top-left-radius: 20px;
+                    border-bottom-right-radius: 20px;   
+                }
+                .text{
+                    position: absolute;
+                    top: 48%;
+                    left: 10%;
+                    text-align: center;
+                    color: $first-background-color;
+                    font-weight: bold;
+                    transition: .2s;
+                    opacity: 0;
+                }
             }
             .row{
                 display: flex;
-                img{
-                    height: 235px;
-                    width: 540px;
+                .image{
                     margin-right: 5%;
+                    img{
+                        height: 235px;
+                        width: 540px;
+                    }
                 }
             }
             .row:first-child{
@@ -452,9 +469,106 @@ main{
                     width: 255px;
                 }
             }
+            .row:last-child{
+                .image{
+                    margin-right: 0;
+                    .text{
+                        left: 33%;
+                    }
+                }
+            }
         }
         .column:last-child{
             margin-right: 0;
+        }
+        .image:hover{
+            img{
+                opacity: 0.2;
+            }
+            .text{
+                opacity: 1;
+            }
+        }
+    }
+    .acordion-section{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 10% 10% 0 10%;
+        [class$="button"]{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 60px;
+            color: gray;
+            border: solid 1px gray;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+        .acordion-content{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .item{
+                background-color: #2F2B2B;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                width: 30%;
+                margin-left: 5%;
+                cursor: pointer;
+                img{
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    width: 100%;
+                    margin-bottom: 5%;
+                    height: 280px;
+                }
+                .item-text{
+                    .header{
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: gray;
+                        margin-left: 10%;
+                    }
+                    .text{
+                        color: white;
+                        font-size: 18px;
+                        padding-top: 5%;
+                        margin-left: 10%;
+                    }
+                    .tickets{
+                        display: flex;
+                        align-self: center;
+                        height: 60px;
+                        width: 100%;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-top: 5%;
+                        .date{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50%;
+                            color: gray;
+                        }
+                        .ticket{
+                            background-color:$first-background-color;
+                            border-top-left-radius: 30px;
+                            border-bottom-right-radius: 30px;
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .item:last-child{
+                margin-right: 5%;
+            }
         }
     }
 }
