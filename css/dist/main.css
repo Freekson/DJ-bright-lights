@@ -428,23 +428,131 @@ main .image-section .column {
   justify-content: space-between;
   margin-right: 2%;
 }
-main .image-section .column img {
-  width: 225px;
+main .image-section .column .image {
+  position: relative;
+  cursor: pointer;
+}
+main .image-section .column .image img {
+  transition: 0.2s;
+  width: 270px;
   height: 500px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+main .image-section .column .image .text {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  text-align: center;
+  color: #7A66CC;
+  font-weight: bold;
+  transition: 0.2s;
+  opacity: 0;
+}
 main .image-section .column .row {
   display: flex;
 }
-main .image-section .column .row img {
+main .image-section .column .row .image {
+  margin-right: 5%;
+}
+main .image-section .column .row .image img {
   height: 235px;
   width: 540px;
-  margin-right: 5%;
 }
 main .image-section .column .row:first-child img {
   width: 255px;
 }
+main .image-section .column .row:last-child .image {
+  margin-right: 0;
+}
+main .image-section .column .row:last-child .image .text {
+  left: 33%;
+}
 main .image-section .column:last-child {
   margin-right: 0;
+}
+main .image-section .image:hover img {
+  opacity: 0.2;
+}
+main .image-section .image:hover .text {
+  opacity: 1;
+}
+main .acordion-section {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 10% 10% 0 10%;
+}
+main .acordion-section [class$=button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 60px;
+  color: gray;
+  border: solid 1px gray;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+main .acordion-section .acordion-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .acordion-section .acordion-content .item {
+  background-color: #2F2B2B;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 30%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+main .acordion-section .acordion-content .item img {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  margin-bottom: 5%;
+  height: 280px;
+}
+main .acordion-section .acordion-content .item .item-text .header {
+  font-weight: bold;
+  font-size: 18px;
+  color: gray;
+  margin-left: 10%;
+}
+main .acordion-section .acordion-content .item .item-text .text {
+  color: white;
+  font-size: 18px;
+  padding-top: 5%;
+  margin-left: 10%;
+}
+main .acordion-section .acordion-content .item .item-text .tickets {
+  display: flex;
+  align-self: center;
+  height: 60px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+main .acordion-section .acordion-content .item .item-text .tickets .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: gray;
+}
+main .acordion-section .acordion-content .item .item-text .tickets .ticket {
+  background-color: #7A66CC;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+main .acordion-section .acordion-content .item:last-child {
+  margin-right: 5%;
 }
