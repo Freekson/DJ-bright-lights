@@ -607,4 +607,58 @@ footer{
     .text:last-child{
         margin-bottom: 5%;
     }
+    .social-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        width: 100%;
+        .first-layer{
+            background-color: rgba(122, 102, 204, 0.3);
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            position: relative;
+            margin-right: 2%;
+            .second-layer{
+                background-color: rgba(122, 102, 204, 0.6);
+                position: absolute;
+                width: 44px;
+                height: 44px;
+                border-radius: 50px;
+                top: 13%;
+                left: 14%;
+                display: flex;
+                align-items: center;
+                svg{
+                    top: 25%;
+                    left: 25%;
+                    position: absolute;
+                }
+            }
+        }
+        .first-layer:nth-child(4)
+        {
+            .second-layer{
+                svg{
+                    top: 30%;
+                }
+            }
+        }
+        .first-layer:nth-child(5)
+        {
+            .second-layer{
+                svg{
+                    top: 30%;
+                }
+            }
+        }
+    }
+    .footer-text{
+        text-transform: uppercase;
+        color: gray;
+        font-size: 13px;
+        text-align: center;
+    }
 }
