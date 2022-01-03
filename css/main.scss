@@ -81,6 +81,7 @@ header{
                 border-left: 20px solid white;
                 border-bottom: 10px solid transparent;
                 margin-right: 3%;
+                cursor: pointer;
             }
             .line-block{
                 width: 90%;
@@ -130,13 +131,16 @@ main{
             .image{
                 position: relative;
                 width: 100%;
+                transition: .2s;
                 img{
                     width: 100%;
                     height: 300px;
                     border-top-left-radius: 20px;
                     border-bottom-right-radius: 20px;
+                    transition: .4s;
                 }
                 .text-block{
+                    transition: .4s;
                     width: 100%;
                     position: absolute;
                     bottom: 5px;
@@ -158,6 +162,18 @@ main{
         }
         .image-block:last-child{
             margin-right: 0;
+        }
+        .image-block:hover{
+            .image{
+                transform: translate3d(0, -25px, 0);
+                img{
+                    opacity: .3;
+                }
+                .text-block{
+                    height: 98.3%;
+                    text-align: center;
+                }
+            }
         }
     }
     .bright-lights-section{
@@ -277,11 +293,17 @@ main{
             position: absolute;
             top: -65px;
             right: 200px;
+            transition: ease-in-out .4s;
             img{
                 width: 370px;
                 border-top-left-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
+        }
+    }
+    .article-section:hover{
+        .image{
+            transform: translate3d(50px,0,0);
         }
     } 
     .last-tracks-section{
@@ -343,6 +365,7 @@ main{
                     border-left: 20px solid white;
                     border-bottom: 10px solid transparent;
                     margin-right: 3%;
+                    cursor: pointer;
                 }
                 .line-block{
                     width: 90%;
@@ -388,9 +411,15 @@ main{
                         text-decoration: none;
                         font-size: 18px;
                         color: white;
+                        transition: .1s;
                     }
                 }
                 .active-track{
+                    a{
+                        color: $first-background-color;
+                    }
+                }
+                li:hover{
                     a{
                         color: $first-background-color;
                     }
@@ -416,6 +445,12 @@ main{
                         color: white;
                         font-size: 14px;
                         font-weight: bold;
+                        transition: .1s;
+                    }
+                }
+                .follow-block:hover{
+                    p{
+                        color: $first-background-color  ;
                     }
                 }
             }
@@ -437,7 +472,7 @@ main{
                 position: relative;
                 cursor: pointer;
                 img{
-                    transition: .2s;
+                    transition: .3s;
                     width: 270px;
                     height: 500px;
                     border-top-left-radius: 20px;
@@ -450,7 +485,7 @@ main{
                     text-align: center;
                     color: $first-background-color;
                     font-weight: bold;
-                    transition: .2s;
+                    transition: .5s;
                     opacity: 0;
                 }
             }
@@ -518,6 +553,7 @@ main{
                 width: 30%;
                 margin-left: 5%;
                 cursor: pointer;
+                transition: .2s;
                 img{
                     border-top-left-radius: 30px;
                     border-bottom-right-radius: 30px;
@@ -568,6 +604,9 @@ main{
             }
             .item:last-child{
                 margin-right: 5%;
+            }
+            .item:hover{
+                transform: translate3d(0, -20px, 0);
             }
         }
     }
